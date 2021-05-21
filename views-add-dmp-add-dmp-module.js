@@ -5844,7 +5844,7 @@ var MatProgressBarModule = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"animated fadeIn\">\n<ngx-spinner bdColor = \"rgba(0, 0, 0, 0.8)\" size = \"medium\" color = \"#fff\" type = \"square-jelly-box\" [fullScreen] = \"true\"><p style=\"color: white\" > Sedang mengunggah file... </p></ngx-spinner>  \n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"card\">\n        <div class=\"card-header\">\n          <strong>Basic Form</strong> Elements\n        </div>\n        <div class=\"card-body\">\n           <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"date-input\">Tanggal rilis</label>\n              <div class=\"col-md-9\">\n                <input class=\"form-control\" [(ngModel)]=\"created_at\" id=\"date-input\" type=\"date\" name=\"date-input\" placeholder=\"date\">\n                <!-- <span class=\"help-block\">Please enter a valid date</span> -->\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"text-input\">Nama DMP</label>\n              <div class=\"col-md-9\">\n                <input [(ngModel)]=\"disway_name\" type=\"text\" id=\"text-input\" name=\"text-input\" class=\"form-control\">\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"email-input\">Judul DMP</label>\n              <div class=\"col-md-9\">\n                <input [(ngModel)]=\"disway_title\" type=\"text\" class=\"form-control\" placeholder=\"\">\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"file-input\">File Banner (JPG)</label>\n              \n            </div>\n            <ngx-dropzone (change)=\"onSelect($event, 'banner')\" [multiple]=\"false\">\n\t\t\t    <ngx-dropzone-label>Klik atau tarik file kesini</ngx-dropzone-label>\n\t\t\t    <ngx-dropzone-image-preview ngProjectAs=\"ngx-dropzone-preview\" *ngFor=\"let f of banner\" [file]=\"f\" [removable]=\"true\" (removed)=\"onRemove(f, 'banner')\">\n\t\t\t\t</ngx-dropzone-image-preview>\n\t\t\t</ngx-dropzone>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"file-input\">File DMP (PDF)</label>\n              \n            </div>\n          <ngx-dropzone (change)=\"onSelect($event, 'files')\" [multiple]=\"false\" accept=\"application/pdf\">\n\t\t    <ngx-dropzone-label>Klik atau tarik file kesini</ngx-dropzone-label>\n\t\t    <ngx-dropzone-preview *ngFor=\"let f of files\" [removable]=\"true\" (removed)=\"onRemove(f, 'files')\">\n\t\t        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>\n\t\t    </ngx-dropzone-preview>\n\t\t</ngx-dropzone>\n\t\t<br>\n\t\t\t\t<div role=\"alert\" class=\"alert alert-success\" *ngIf=\"isSuccessAlert\">\n\t\t\t\t\t<strong>Berhasil!</strong> Data telah tersimpan \n\t\t\t\t</div>\n\t\t\t\t<div role=\"alert\" *ngIf=\"isDangerAlert\" class=\"alert alert-danger\">\n\t\t\t\t\t<strong>Gagal!</strong> data tidak tersimpan \n\t\t\t\t</div>\n        </div>\n        <div class=\"card-footer\">\n          <button type=\"submit\" class=\"btn btn-sm btn-primary\" (click)=\"saveDmp()\"><i class=\"fa fa-dot-circle-o\"></i> Submit</button>\n        </div>\n      </div>\n    </div>\n   \n  </div><!--/.row-->\n  \n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"animated fadeIn\">\n<ngx-spinner bdColor = \"rgba(0, 0, 0, 0.8)\" size = \"medium\" color = \"#fff\" type = \"square-jelly-box\" [fullScreen] = \"true\"><p style=\"color: white\" > Sedang mengunggah file... </p></ngx-spinner>  \n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"card\">\n        <div class=\"card-header\">\n          <strong>Basic Form</strong> Elements\n        </div>\n        <div class=\"card-body\">\n           <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"date-input\">Tanggal rilis</label>\n              <div class=\"col-md-9\">\n                <input class=\"form-control\" [(ngModel)]=\"created_at\" id=\"date-input\" type=\"date\" name=\"date-input\" placeholder=\"date\">\n                <!-- <span class=\"help-block\">Please enter a valid date</span> -->\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"text-input\">Nama DMP</label>\n              <div class=\"col-md-9\">\n                <input [(ngModel)]=\"disway_name\" type=\"text\" id=\"text-input\" name=\"text-input\" class=\"form-control\">\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"email-input\">Judul DMP</label>\n              <div class=\"col-md-9\">\n                <input [(ngModel)]=\"disway_title\" type=\"text\" class=\"form-control\" placeholder=\"\">\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"file-input\">File Banner (JPG)</label>\n              \n            </div>\n            <ngx-dropzone (change)=\"onSelect($event, 'banner')\" [multiple]=\"false\">\n\t\t\t    <ngx-dropzone-label>Klik atau tarik file kesini</ngx-dropzone-label>\n\t\t\t    <ngx-dropzone-image-preview ngProjectAs=\"ngx-dropzone-preview\" *ngFor=\"let f of banner\" [file]=\"f\" [removable]=\"true\" (removed)=\"onRemove(f, 'banner')\">\n\t\t\t\t</ngx-dropzone-image-preview>\n\t\t\t</ngx-dropzone>\n            <div class=\"form-group row\">\n              <label class=\"col-md-3 col-form-label\" for=\"file-input\">File DMP (PDF)</label>\n              \n            </div>\n          <ngx-dropzone (change)=\"onSelect($event, 'files')\" [multiple]=\"false\" accept=\"application/pdf\">\n\t\t    <ngx-dropzone-label>Klik atau tarik file kesini</ngx-dropzone-label>\n\t\t    <ngx-dropzone-preview *ngFor=\"let f of files\" [removable]=\"true\" (removed)=\"onRemove(f, 'files')\">\n\t\t        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>\n\t\t    </ngx-dropzone-preview>\n\t\t</ngx-dropzone>\n\t\t<br>\n\t\t\t\t<div role=\"alert\" class=\"alert alert-success\" *ngIf=\"isSuccessAlert\">\n\t\t\t\t\t<strong>Berhasil!</strong> Data telah tersimpan \n\t\t\t\t</div>\n\t\t\t\t<div role=\"alert\" *ngIf=\"isDangerAlert\" class=\"alert alert-danger\">\n\t\t\t\t\t<strong>Gagal!</strong> {{failMsg}}\n\t\t\t\t</div>\n        </div>\n        <div class=\"card-footer\">\n          <button type=\"submit\" class=\"btn btn-sm btn-primary\" (click)=\"saveDmp()\"><i class=\"fa fa-dot-circle-o\"></i> Submit</button>\n        </div>\n      </div>\n    </div>\n   \n  </div><!--/.row-->\n  \n</div>\n");
 
 /***/ }),
 
@@ -5935,6 +5935,7 @@ var AddDmpComponent = /** @class */ (function () {
         this.isUploading = false;
         this.isSuccessAlert = false;
         this.isDangerAlert = false;
+        this.failMsg = '';
         this.banner = [];
         this.files = [];
         this.itemBanner = null;
@@ -5998,15 +5999,25 @@ var AddDmpComponent = /** @class */ (function () {
             .subscribe(function (res) {
             _this.spinner.hide();
             console.log(res);
-            _this.isSuccessAlert = true;
-            _this.disway_name = '';
-            _this.disway_title = '';
-            _this.disway_title = '';
-            _this.banner = [];
-            _this.files = [];
-            setTimeout(function () {
-                _this.isSuccessAlert = false;
-            }, 3000);
+            _this.api.resp = res;
+            if (_this.api.resp.status == true) {
+                _this.isSuccessAlert = true;
+                _this.disway_name = '';
+                _this.disway_title = '';
+                _this.disway_title = '';
+                _this.banner = [];
+                _this.files = [];
+                setTimeout(function () {
+                    _this.isSuccessAlert = false;
+                }, 3000);
+            }
+            else {
+                _this.isDangerAlert = true;
+                _this.failMsg = _this.api.resp.msg;
+                setTimeout(function () {
+                    _this.isDangerAlert = false;
+                }, 3000);
+            }
             // alert('Uploaded Successfully.');
         });
         // this.api.provideDataForm(fd,'upload').subscribe((resp)=>{

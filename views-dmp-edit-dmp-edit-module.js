@@ -104,6 +104,7 @@ var DmpEditComponent = /** @class */ (function () {
         this.isSuccessAlert = false;
         this.isDangerAlert = false;
         this.data = {};
+        this.failMsg = '';
         this.banner = [];
         this.files = [];
         this.itemBanner = null;
@@ -152,11 +153,21 @@ var DmpEditComponent = /** @class */ (function () {
             .subscribe(function (res) {
             _this.spinner.hide();
             console.log(res);
-            _this.isSuccessAlert = true;
-            _this.router.navigate(['/dmp-list']);
-            setTimeout(function () {
-                _this.isSuccessAlert = false;
-            }, 3000);
+            _this.api.resp = res;
+            if (_this.api.resp.status == true) {
+                _this.isSuccessAlert = true;
+                _this.router.navigate(['/dmp-list']);
+                setTimeout(function () {
+                    _this.isSuccessAlert = false;
+                }, 3000);
+            }
+            else {
+                _this.isDangerAlert = true;
+                _this.failMsg = _this.api.resp.msg;
+                setTimeout(function () {
+                    _this.isDangerAlert = false;
+                }, 3000);
+            }
             // alert('Uploaded Successfully.');
         });
         // this.api.provideDataForm(fd,'upload').subscribe((resp)=>{
